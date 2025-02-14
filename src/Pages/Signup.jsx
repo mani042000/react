@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Col,Input,Form,Button,Card,Span} from 'antd'
+import {Row, Col,Input,Form,Button,Card} from 'antd'
 import { Link } from 'react-router-dom'
 
 const Signup = () => {

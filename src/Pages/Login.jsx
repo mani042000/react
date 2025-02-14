@@ -1,29 +1,35 @@
 import React from 'react'
-import{Row ,Col,Card ,Input,Button } from'antd';
-import {Link} from 'react-router-dom'; 
+import{Row ,Col,Card ,Input,Button, Flex } from'antd';
+import { Link } from 'react-router-dom'; 
+import anime from '../Asserts/Anime-Kakashi-Wallpaper-HD-105646.jpg'
 
 
 const Login = () => {
   return (
-    <div>
-        <Row>
-            <Col style={{display:'flex', justifyContent:'center', alignItems:'center'}} span={24}>
-                <Card style={{border:'1px solid black', background:'orange'}}>
-                     <h2 style={{backgroundColor:'orange'}}> login</h2> 
-                    <Input placeholder='enter your email address'style={{width:'90%'}} />
-                    <br/>
-                    
-                    <Input style={{marginTop:'20px',width:'90%'}} placeholder=' password'/>    
-                    <p>Do you have a account let's <Link to='/signup'>sign up</Link></p>
-                    <Button style={{marginTop:'20px'}} color='blue' variant='solid'><Link to='/dashboard'>submit</Link></Button>
-                             
-                </Card>
-            </Col>
-        </Row>
-        
-        
-    </div>
+  
+    <form style={{ border: "50px", marginTop: "300px" }}>
+
+    <Row style={{ textAlign:"center", justifyContent:"center" }}>
+        <Col style={{ backgroundImage: "url(anime)", backgroundSize: "cover", backgroundPosition:"fixed"}}>
+       
+        <h1 style={{ color: "red" }}>login page</h1>
+
+        <p style={{ color: "white", fontSize:"20px", display:"flex", }} > enter your name:</p>
+          <Input type=" enter your name " placeholder="enter your name" />
+
+          <p style={{ color: "white", fontSize: "20px", display: "flex", }} > enter your password:</p>
+          <Input type="password" placeholder="enter your password" />
+            
+
+      <Button > </Button>
+
+
+      </Col>
+    </Row>
+    </form >
+    
   )
 }
 
 export default Login
+ 
